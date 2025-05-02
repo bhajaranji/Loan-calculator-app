@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 💸 Loan Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and themeable Loan EMI Calculator built with **React** and **Material UI**, featuring real-time **currency conversion** using the [ExchangeRate API](https://www.exchangerate-api.com/).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Overview
 
-### `npm start`
+This web app allows users to calculate monthly EMIs (Equated Monthly Installments) for a loan based on:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Loan amount
+* Interest rate
+* Loan duration (in months)
+* Currency (auto-converted from USD to selected currency)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The interface supports **light/dark mode toggling** and gracefully handles invalid routes with a 404 page.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧰 Tech Stack
 
-### `npm run build`
+* **React** (v18+)
+* **Material UI** (MUI v5)
+* **React Router DOM** for routing
+* **Axios** for API calls
+* **ExchangeRate API** for live currency conversion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔑 API Integration
 
-### `npm run eject`
+We use the **ExchangeRate API** to fetch live currency rates.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Example API:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+https://v6.exchangerate-api.com/v6/your_api_key/latest/USD
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Environment Setup:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can optionally place your key in a `.env` file:
 
-## Learn More
+```env
+REACT_APP_EXCHANGE_RATE_API_KEY=your_api_key
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+And reference it in code:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+const API_KEY = process.env.REACT_APP_EXCHANGE_RATE_API_KEY;
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 How to Run the Project
 
-### Analyzing the Bundle Size
+### 1. Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/yourusername/loan-calculator-app.git
+cd loan-calculator-app
+```
 
-### Making a Progressive Web App
+### 2. Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+### 3. Run the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+App will be live at: `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ✅ Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* 💡 Light/Dark mode toggle
+* 🌍 Real-time currency conversion
+* 📊 EMI calculation using standard financial formula
+* 📱 Responsive MUI layout for mobile/desktop
+* 🚫 404 error handling for unknown routes
+
