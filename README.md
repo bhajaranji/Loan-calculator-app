@@ -15,6 +15,8 @@ This web app allows users to calculate monthly EMIs (Equated Monthly Installment
 
 The interface supports **light/dark mode toggling** and gracefully handles invalid routes with a 404 page.
 
+## Demo Link: https://proj-loancalculator.netlify.app/
+
 ---
 
 ## 🧰 Tech Stack
