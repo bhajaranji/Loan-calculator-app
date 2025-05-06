@@ -61,7 +61,7 @@ const API_KEY = process.env.REACT_APP_EXCHANGE_RATE_API_KEY;
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/loan-calculator-app.git
+git clone https://github.com/bhajaranji/Loan-calculator-app.git
 cd loan-calculator-app
 ```
 
