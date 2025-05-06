@@ -1,4 +1,4 @@
-# 💸 Loan Calculator App BY ABHHINAY KOLKUR
+# 💸 Loan Calculator App BY ABHINAY KOLKUR
 
 A responsive and themeable Loan EMI Calculator built with **React** and **Material UI**, featuring real-time **currency conversion** using the [ExchangeRate API](https://www.exchangerate-api.com/).
 
